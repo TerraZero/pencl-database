@@ -1,0 +1,13 @@
+{
+  "type": "field",
+  "table": "field_reference",
+  "value": ["target_type", "target_id"],
+  "wireTo": {
+    "type": "bundle",
+    "id": "entity_id"
+  },
+  "wireFrom": {
+    "type": "target_type",
+    "id": "target_id"
+  }
+}

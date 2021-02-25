@@ -1,0 +1,15 @@
+{
+  "name": "pencl-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TerraZero",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.21.18",
+    "sqlite3": "^5.0.2"
+  }
+}
