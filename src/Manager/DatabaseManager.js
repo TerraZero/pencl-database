@@ -27,6 +27,14 @@ module.exports = class DatabaseManager {
 
   /**
    * @param {string} env 
+   * @returns {object}
+   */
+  getConfig(env = null) {
+    return this.config[env || this.env];
+  }
+
+  /**
+   * @param {string} env 
    * @returns {Knex}
    */
   connection(env = null) {
