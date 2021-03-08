@@ -1,7 +1,11 @@
 {
   "type": "entity",
   "table": "node",
-  "fields": ["schema.field.text"],
+  "name": "node",
+  "props": {
+    "id": "nid",
+    "type": "bundle"
+  },
   "wire": {
     "id": "nid",
     "type": "bundle"

@@ -1,0 +1,10 @@
+{
+  "type": "field",
+  "table": "field_text",
+  "name": "field_text",
+  "wireTo": {
+    "+field": "field_text",
+    "type": "type",
+    "id": "entity_id"
+  }
+}

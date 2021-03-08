@@ -1,9 +1,11 @@
 {
   "type": "field",
   "table": "field_reference",
-  "value": ["target_type", "target_id"],
+  "name": "field_ref",
+  "values": ["target_type", "target_id"],
   "wireTo": {
-    "type": "bundle",
+    "+field": "field_ref",
+    "type": "type",
     "id": "entity_id"
   },
   "wireFrom": {
