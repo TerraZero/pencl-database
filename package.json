@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "knex": "^0.21.18",
+    "pencl-base": "git+https://github.com/TerraZero/pencl-base.git",
     "pencl-config": "git+https://github.com/TerraZero/pencl-config.git",
     "sqlite3": "^5.0.2"
   }
