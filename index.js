@@ -13,7 +13,7 @@ class PenclDatabase extends PenclPlugin {
       config: {
         data: null,
         file: '~/knexfile.js',
-        schema: 'schema.*',
+        schema: 'schema.*', /** @todo use 'schema.data.*' instead and add 'schema.table.*' pattern for table definition */
       },
       env: 'development',
     };
@@ -31,7 +31,7 @@ class PenclDatabase extends PenclPlugin {
       if (this.config.config.file) {
         this.config.config.data = require(PenclBoot.getPath(this.config.config.file));
       }
-      
+
       this._manager = new DatabaseManager(this.config.config.data, this.config.config.env);
       for (const config of configManager.list(this.config.config.schema)) {
         this._manager.load(configManager.get(config));
