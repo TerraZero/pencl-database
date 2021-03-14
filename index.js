@@ -4,11 +4,11 @@ const DatabaseManager = require('./src/Manager/DatabaseManager');
 
 class PenclDatabase extends PenclPlugin {
 
-  static get name() {
+  get name() {
     return 'database';
   }
 
-  static get config() {
+  get config() {
     return {
       config: {
         data: null,
