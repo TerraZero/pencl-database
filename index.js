@@ -1,6 +1,5 @@
 const PenclBoot = require('pencl-base');
 const PenclPlugin = require('pencl-base/src/Boot/PenclPlugin');
-const DatabaseManager = require('./src/Manager/DatabaseManager');
 
 class PenclDatabase extends PenclPlugin {
 
@@ -24,8 +23,10 @@ class PenclDatabase extends PenclPlugin {
     this._manager = null;
   }
 
+  /** @returns {import('./src/Manager/DatabaseManager')} */
   get manager() {
     if (this._manager === null) {
+      const DatabaseManager = require('./src/Manager/DatabaseManager');
       const configManager = require('pencl-config').manager;
 
       if (this.config.config.file) {
